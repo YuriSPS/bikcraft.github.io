@@ -29,12 +29,13 @@
   height: 2px;
   width: 0%;
   background: var(--cor-0);
+  transition: 0.3s;
   position: absolute;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.menu-ativo::after {
   width: 100%;
-  transition: 0.3s;
 }
 
 @media (max-width: 800px) {
